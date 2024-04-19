@@ -55,7 +55,7 @@
     </div>
 
   </div>
-  <div class="flex justify-center div-button-form">
+  <div class="bouton flex justify-center div-button-form">
     <a :href="'/success'"  type="submit" class="button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Pay</a>
   </div>
 </template>
@@ -109,6 +109,14 @@
   background: #6E7DAB;
   width: 80%;
   font-size: 22px;
+}
+
+.bouton{
+  position: absolute;
+  bottom: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>
