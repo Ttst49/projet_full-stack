@@ -114,9 +114,6 @@
 .bouton{
   position: absolute;
   bottom: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 </style>

@@ -13,7 +13,7 @@ import {faBasketShopping, faCircleCheck, faCircleXmark} from "@fortawesome/free-
 
     <div class="container_infosEvent">
       <div class="">
-        <img class="img_event_show" src="" alt="image event">
+        <img class="img_event_show" src="../assets/298995.jpg" alt="image event">
       </div>
 
       <div class="">
