@@ -61,7 +61,7 @@ export default {
     <div class="eventList">
       <div v-if="noData" class="no-data-message">No data for this moment</div>
       <div v-else>
-        <a v-for="event in venues" :key="event.id" :href="`/event/show/${event.id}`">
+        <a v-for="event in venues" :key="event.id" :href="`/event/show`">
           <div class="card">
             <div class="top">
               <div class="topLeft">
