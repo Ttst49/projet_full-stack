@@ -1,6 +1,8 @@
 
 <script setup>
 import { ref } from 'vue';
+import Swal from "sweetalert2";
+import router from "@/router";
 
 const name = "Pierre Lacroix";
 const amount = ref(5);
@@ -11,17 +13,24 @@ const decoration = ref(5);
 const handleSubmit = () => {
   const amountValue = amount.value;
   const descriptionValue = description.value;
+  Swal.fire({
+    title: "thank ",
+    text: ' thank for your donation', amountValue,
+    icon: "success"
+  });
+  router.push('/artist/show');
 
-  console.log('Montant saisi :', amountValue);
   console.log('Description saisie :', descriptionValue);
   amount.value = '';
   description.value = '';
+
 };
 
 const setAmount = (selectedAmount) => {
   amount.value = selectedAmount.toString();
   showOtherAmountInput.value = false;
   decoration.value = amount.value;
+
 };
 
 const toggleOtherAmountInput = () => {

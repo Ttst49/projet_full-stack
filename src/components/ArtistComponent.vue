@@ -14,7 +14,7 @@
 
       <div class="right">
         <a href="/artist/show">
-        <span class="artistName">Jeremy ferrrrary</span>
+        <span class="artistName">Jeremey Ferrrrary</span>
         </a>
         <div class="info">
           <span class="entries">28 part.</span>

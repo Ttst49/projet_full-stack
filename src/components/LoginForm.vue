@@ -12,15 +12,15 @@ const handleSubmit = async () => {
   try {
     const response = await login();
     localStorage.setItem('bearerToken', response.data.token);
-    await router.push('/login');
-
+    window.location.reload();
+    await router.push('/profile');
   } catch (error) {
     console.error("Erreur lors du login :", error);
   }
 };
 
 const login = async () => {
-  const url = "https://projectapi.thibautstachnick.com";
+  const url = "https://fsapi.thibautstachnick.com";
   try {
     const response = await axios.post(`${url}/api/login_check`, {
       email: email.value,

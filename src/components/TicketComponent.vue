@@ -14,7 +14,9 @@
         <h3>12.30$</h3>
         <h2 class="text-start title_infoQrCode fw">Give this QR to event’s organizer</h2>
       </div>
-      <div class="">Qrcode</div>
+      <div class="qrCode-img">
+        <img src="@/assets/Qrcode_wikipedia_fr_v2clean.png" alt="qrcode_wikipedia_fr_v2clean" />
+      </div>
     </div>
 
     <div class="mt-10">
@@ -104,6 +106,8 @@
 .title_infoQrCode {
   font-size: 28px;
 }
+.qrCode-img{
+  width: 40%;
+}
 </style>
-
 

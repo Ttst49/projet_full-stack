@@ -19,6 +19,7 @@ export default {
     FontAwesomeIcon,
   },
 };
+
 </script>
 
 <template>

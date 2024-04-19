@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import router from "@/router";
 
-localStorage.removeItem('token')
+localStorage.removeItem('bearerToken')
 router.push('/');
 
 </script>

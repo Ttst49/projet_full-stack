@@ -32,7 +32,7 @@ import {faBasketShopping, faCircleCheck, faCircleXmark} from "@fortawesome/free-
 
 
       <div class="">
-        <button class="btn btn_primary justify-center fw items-center	">Book<font-awesome-icon class="ms-3" :icon="faBasketShopping" /></button>
+        <a :href="'/payment/'" class="btn btn_primary justify-center fw items-center	">Book<font-awesome-icon class="ms-3" :icon="faBasketShopping" /></a>
       </div>
 
 
@@ -50,7 +50,7 @@ import {faBasketShopping, faCircleCheck, faCircleXmark} from "@fortawesome/free-
 
       <hr class="bg_line_dark">
 
-      <div class="card">
+      <a :href="'/event/show'" class="card">
         <div class="top">
           <div class="topLeft">
             <span class="name">Bistrot fringuant</span>
@@ -82,9 +82,9 @@ import {faBasketShopping, faCircleCheck, faCircleXmark} from "@fortawesome/free-
           </span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="card">
+      <a :href="'/event/show'" class="card">
         <div class="top">
           <div class="topLeft">
             <span class="name">Fnac Bellecour</span>
@@ -117,9 +117,9 @@ import {faBasketShopping, faCircleCheck, faCircleXmark} from "@fortawesome/free-
           </span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="card">
+      <a :href="'/event/show'" class="card">
         <div class="top">
           <div class="topLeft">
             <span class="name">Le Jean Jean</span>
@@ -152,7 +152,7 @@ import {faBasketShopping, faCircleCheck, faCircleXmark} from "@fortawesome/free-
           </span>
           </div>
         </div>
-      </div>
+      </a>
 
     </div>
 

@@ -24,7 +24,7 @@ const handleSubmit = async () => {
 };
 
 const register = async () => {
-  const url = "https://projectapi.thibautstachnick.com";
+  const url = "https://fsapi.thibautstachnick.com";
   try {
     const response = await axios.post(`${url}/api/register`, {
       email: email.value,

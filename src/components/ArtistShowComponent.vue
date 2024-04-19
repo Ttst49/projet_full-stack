@@ -34,6 +34,8 @@ import {faCircleCheck, faCircleRight} from "@fortawesome/free-solid-svg-icons";
       <img class="PP" src="" alt="Artist">
       <span class="name">Jeremy Ferrrrary</span>
       <span class="role">Artist <font-awesome-icon :icon="faCircleRight()" /></span>
+      <a :href="'/donation'" type="submit" class="submit-button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Donate</a>
+
     </div>
     <div class="donationList">
       <div class="card">
@@ -142,7 +144,9 @@ body{
   margin-bottom: 5%;
 
 }
-
+.submit-button, .submit-button:hover{
+  background: #6E7DAB;
+}
 .card-left{
   height: 100%;
   width: 25vw;

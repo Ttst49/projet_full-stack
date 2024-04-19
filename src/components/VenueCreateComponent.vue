@@ -1,9 +1,9 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import axios from 'axios';
 import router from '@/router';
 import { GlobalConstants } from "@/Common/global-constants";
+import axiosHttp from "@/auth/interceptor";
 
 export default defineComponent({
   data() {
@@ -26,9 +26,9 @@ export default defineComponent({
   methods: {
     async createVenue() {
       try {
-        const response = await axios.post(`${GlobalConstants.baseUrl}/venue/create`, this.venueData);
+        const response = await axiosHttp.post(`${GlobalConstants.baseUrl}/venue/create`, this.venueData);
         this.resetForm();
-        router.push('/nouvelle-route');
+        router.push('/venue');
       } catch (error) {
         console.error("Erreur lors de la requête :", error);
       }
@@ -61,7 +61,7 @@ export default defineComponent({
           </div>
           <div class="">
             <label for="siret">SIRET number</label>
-            <input type="text" pattern="[0-9]*" inputmode="numeric" id="siret" v-model="venueData.SIRET" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="1234 5678 9012" required />
+            <input type="number" pattern="[0-9]*" inputmode="numeric" id="siret" v-model="venueData.SIRET" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="1234 5678 9012" required />
           </div>
           <div class="">
             <label for="email">Email</label>
