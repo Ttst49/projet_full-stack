@@ -33,7 +33,10 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "cypress/**/*.ts",
+    "src/components/**/*.cy.js",
+    "src/components/**/*.cy.ts"
   ],
   "exclude": [
     "node_modules"
